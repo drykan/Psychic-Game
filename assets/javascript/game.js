@@ -31,20 +31,15 @@ window.onload = function computerLetter() {
 				guessedLetters.innerHTML = guessedLetters.innerHTML + userGuess + ", ";
 			}
 		}
-		else {
-			
-			reset();
+		else if (lossCounter == 10) {
+			winCounter = 0;
+			lossCounter = 0;
+			livesCounter = 10;
 		}
 
 
 		
 
-	}
-
-	function reset() {
-		var winCounter = 0;
-		var lossCounter = 0;
-		var livesCounter = 10;
 	}
 
 
